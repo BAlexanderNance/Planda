@@ -92,7 +92,7 @@ const UserPanel = (props) => {
         <h2 className="userpanel-header">Groups</h2>
         {groupLinks}
         <button onClick={createGroup}>New Group</button>
-        <button className='userPanelLinks' display={props.userState.groups.includes(props.currentDisplay) ? "none" : "inline"} id='userpanelBtnAddNB' onClick={() => {createModal('notebook', addNotebook)}}>Add New NoteBook to Active Group</button>
+        <button className='userPanelLinks' display={props.userState.groups.includes(props.currentDisplay) ? "block" : "hidden"} id='userpanelBtnAddNB' onClick={() => {createModal('notebook', addNotebook)}}>Add New NoteBook to Active Group</button>
       </div>
     </main>
   );
